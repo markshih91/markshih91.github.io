@@ -1,7 +1,7 @@
-baseurl = "https://markshih91.github.io/"
+baseurl = "/"
 languageCode = "en-us"
-title = "shishuai`s blog"
-theme = "hugo-my-xmin"
+title = "A minimal Hugo website"
+theme = "hugo-xmin"
 googleAnalytics = ""
 disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
@@ -20,28 +20,20 @@ footnotereturnlinkcontents = "↩"
     url = "/about/"
     weight = 2
 [[menu.main]]
-    name = "Posts"
-    url = "/post/"
-    weight = 3
-# [[menu.main]]
-#     name = "Notes"
-#     url = "/note/"
-#     weight = 4
-[[menu.main]]
     name = "Categories"
     url = "/categories/"
-    weight = 5
+    weight = 3
 [[menu.main]]
     name = "Tags"
     url = "/tags/"
-    weight = 6
-# [[menu.main]]
-#     name = "Subscribe"
-#     url = "/index.xml"
+    weight = 4
+[[menu.main]]
+    name = "Subscribe"
+    url = "/index.xml"
 
 [params]
     description = "A website built through Hugo and blogdown."
-    footer = "&copy; [shuai Shi](https://shishuai.org) 2020 -- 2020 | [Github](https://github.com/markshih91)"
+    footer = "&copy; [Yihui Xie](https://yihui.name) 2017 -- 2019 | [Github](https://github.com/yihui) | [Twitter](https://twitter.com/xieyihui)"
 
 [markup]
   [markup.goldmark]

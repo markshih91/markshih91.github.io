@@ -1,0 +1,16 @@
+<style>
+  .post-nav{height:20px; width:800px}
+  .prev-post{width:300px; float:left; overflow: hidden; white-space: nowrap; text-overflow: ellipsis}
+  .next-post{width:300px; float:right; overflow: hidden; white-space: nowrap; text-overflow: ellipsis}
+  </style>
+  
+  <div class="post-nav">
+    <div class="prev-post">
+      {{if .PrevInSection}}
+      prev:<a href="{{.PrevInSection.RelPermalink}}" rel="prev">{{.PrevInSection.Title}}</a>{{end}}
+    </div>
+    <div class="next-post">
+      {{if .NextInSection}}
+      next:<a href="{{.NextInSection.RelPermalink}}" rel="next">{{.NextInSection.Title}}</a>{{end}}
+    </div>
+  </div>
