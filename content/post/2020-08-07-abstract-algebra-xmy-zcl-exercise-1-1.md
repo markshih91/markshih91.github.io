@@ -1,14 +1,14 @@
 ---
 title: 《抽象代数I》习题解答：第一章 群环体域的基本概念
-author: shishuai
+author: Shuai Shi
 date: '2020-08-07'
 categories:
-- Exercises
+  - Exercises
 tags:
   - Group
 ---
 
-### <center>1.1 群的基本概念</center>
+### 1.1 群的基本概念
 
 1、证明群的定义可以简化为：如果一个非空集合$G$上定义了一个二元运算`$\circ$`，满足：
 1) **结合律：** `$(a\circ b)\circ c=a\circ(b\circ c)\ (\forall a,b,c\in G)$`；

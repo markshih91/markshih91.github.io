@@ -1,10 +1,24 @@
 {{ partial "header.html" . }}
 <div class="article-meta">
-<h1><span class="title">{{ .Title | markdownify }}</span></h1>
-{{ with .Params.author }}<h2 class="author">{{ . }}</h2>{{ end }}
-{{ if (gt .Params.date 0) }}<h2 class="date">{{ .Date.Format "2006/01/02" }}</h2>{{ end }}
+  <h1><span class="title">{{ .Title | markdownify }}</span></h1>
+  <!-- {{ with .Params.author }}<h2 class="author">{{ . }}</h2>{{ end }}
+  {{ if (gt .Params.date 0) }}<h2 class="date">{{ .Date.Format "2006/01/02" }}</h2>{{ end }} -->
+  <hr/>
+  {{ with .Params.author }}author:{{ . }}{{ end }}
+  {{ if (gt .Params.date 0) }} | time:{{ .Date.Format "2006/01/02" }}{{ end }}
+  {{ $taxonomy := "categories" }}{{ with .Param $taxonomy }}
+     | categories:
+    {{ range $index, $value := . }}
+    <a class="badge badge-light" href="{{ (site.GetPage (printf "/%s/%s" $taxonomy (. | urlize))).RelPermalink }}">{{ . }}</a>
+    {{ end }}
+  {{ end }}
+  {{ $taxonomy := "tags" }}{{ with .Param $taxonomy }}
+     | tags:
+    {{ range $index, $value := . }}
+    <a class="badge badge-light" href="{{ (site.GetPage (printf "/%s/%s" $taxonomy (. | urlize))).RelPermalink }}">{{ . }}</a>
+    {{ end }}
+  {{ end }}
 </div>
-
 <main>
 {{ .Content }}
 </main>
