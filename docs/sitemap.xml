@@ -3,12 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://markshih91.github.io/note/2017/06/14/another-note/</loc>
-    <lastmod>2017-06-14T00:00:00+00:00</lastmod>
+    <loc>https://markshih91.github.io/categories/</loc>
+    <lastmod>2020-08-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://markshih91.github.io/categories/</loc>
+    <loc>https://markshih91.github.io/categories/exercises/</loc>
+    <lastmod>2020-08-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://markshih91.github.io/tags/group/</loc>
+    <lastmod>2020-08-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://markshih91.github.io/</loc>
+    <lastmod>2020-08-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://markshih91.github.io/post/</loc>
+    <lastmod>2020-08-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://markshih91.github.io/tags/</loc>
+    <lastmod>2020-08-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://markshih91.github.io/post/2020/08/07/%E6%8A%BD%E8%B1%A1%E4%BB%A3%E6%95%B0i%E4%B9%A0%E9%A2%98%E8%A7%A3%E7%AD%94%E7%AC%AC%E4%B8%80%E7%AB%A0-%E7%BE%A4%E7%8E%AF%E4%BD%93%E5%9F%9F%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</loc>
+    <lastmod>2020-08-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://markshih91.github.io/note/2017/06/14/another-note/</loc>
     <lastmod>2017-06-14T00:00:00+00:00</lastmod>
   </url>
   
@@ -18,17 +48,7 @@
   </url>
   
   <url>
-    <loc>https://markshih91.github.io/</loc>
-    <lastmod>2017-06-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://markshih91.github.io/note/</loc>
-    <lastmod>2017-06-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://markshih91.github.io/tags/</loc>
     <lastmod>2017-06-14T00:00:00+00:00</lastmod>
   </url>
   
@@ -69,11 +89,6 @@
   
   <url>
     <loc>https://markshih91.github.io/tags/pandoc/</loc>
-    <lastmod>2016-02-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://markshih91.github.io/post/</loc>
     <lastmod>2016-02-14T00:00:00+00:00</lastmod>
   </url>
   

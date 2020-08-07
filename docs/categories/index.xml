@@ -6,10 +6,19 @@
     <description>Recent content in Categories on shishuai`s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 14 Jun 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 07 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://markshih91.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Exercises</title>
+      <link>https://markshih91.github.io/categories/exercises/</link>
+      <pubDate>Fri, 07 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://markshih91.github.io/categories/exercises/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Example</title>

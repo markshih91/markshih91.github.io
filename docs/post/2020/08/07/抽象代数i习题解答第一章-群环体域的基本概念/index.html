@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>《抽象代数I》习题解答：第一章 群环体域的基本概念 | shishuai`s blog</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home</a></li>
+      
+      <li><a href="/about/">About</a></li>
+      
+      <li><a href="/post/">Posts</a></li>
+      
+      <li><a href="/categories/">Categories</a></li>
+      
+      <li><a href="/tags/">Tags</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h2><span class="title">《抽象代数I》习题解答：第一章 群环体域的基本概念</span></h2>
+<h3 class="author">shishuai</h3>
+<h3 class="date">2020/08/07</h3>
+</div>
+
+<main>
+<h3 id="center11-群的基本概念center"><center>1.1 群的基本概念</center></h3>
+<p>1、证明群的定义可以简化为：如果一个非空集合$G$上定义了一个二元运算<code>$\circ$</code>，满足：</p>
+<ol>
+<li><strong>结合律：</strong> <code>$(a\circ b)\circ c=a\circ(b\circ c)\ (\forall a,b,c\in G)$</code>；</li>
+<li>存在<strong>左幺元：</strong> 存在<code>$e\in G$</code>，使得对任意的$a\in G$，恒有
+<code>$$e\circ a=a;$$</code></li>
+<li>存在<strong>左逆元：</strong> 对任意的<code>$a\in G$</code>，存在<code>$b\in G$</code>，使得
+<code>$$b\circ a=e;$$</code>
+则<code>$G$</code>关于运算<code>$\circ$</code>构成一个群。</li>
+</ol>
+<p><strong>解答：</strong> <code>$\forall a\in G$</code>，存在<code>$b\in G$</code>，使得<code>$b\circ a=e$</code>，则对于<code>$b$</code>，存在<code>$c\in G$</code>，使得<code>$c\circ b=e$</code>，则
+<code>$$ \begin{aligned} &amp; b\circ (a\circ e)=(b\circ a)\circ e=e\circ e=e =b\circ a \\ \Rightarrow &amp; c\circ (b\circ (a\circ e))=c\circ (b\circ a) \\ \Rightarrow &amp; (c\circ b)\circ (a\circ e)=(c\circ b)\circ a \\ \Rightarrow &amp; e\circ (a\circ e)=e\circ a \\ \Rightarrow &amp; a\circ e=a \end{aligned} $$</code>
+因此，存在<code>$e\in G$</code>,对任意<code>$a\in G$</code>，<code>$e\circ a=a\circ e=a$</code>，即<code>$G$</code>存在幺元。假设存在另一个<code>$e_1\in G$</code>，使得<code>$e_1\circ a=a\circ e_1=a$</code>，则
+<code>$$e_1=e\circ e_1=e_1\circ e=e$$</code>
+即，<code>$G$</code>存在唯一的幺元。</p>
+<p>由于<code>$b\circ a=e$</code>，则
+<code>$$ \begin{aligned} &amp; (b\circ a)\circ b=b \\ \Rightarrow &amp; c\circ ((b\circ a)\circ b))=c\circ b \\ \Rightarrow &amp; (c\circ b)\circ (a\circ b)=e \\ \Rightarrow &amp; e\circ (a\circ b)=e \\ \Rightarrow &amp; a\circ b=e \\ \end{aligned} $$</code>
+因此，对任意<code>$a\in G$</code>，存在<code>$b\in G$</code>，使得<code>$a\circ b=b\circ a=e$</code>，即<code>$G$</code>中每个元素存在逆元。假设存在另一个<code>$b_1\in G$</code>，使得<code>$a\circ b_1=b_1\circ a=e$</code>，则
+<code>$$b_1=b_1\circ(a\circ b)=(b_1\circ a)\circ b=b$$</code>
+即，<code>$G$</code>中任意元素存在唯一的逆元。
+综上所述，<code>$G$</code>是群。</p>
+<hr>
+<p>2、举例说明：在上题中将条件3.改为“存在<strong>右逆元：</strong> 对任意的<code>$a\in G$</code>，存在<code>$b\in G$</code>，使得<code>$a\circ b=e$</code>”，则<code>$G$</code>不一定是群。</p>
+<p><strong>解答：</strong> 令<code>$G=\{e,a\}$</code>，其中<code>$e,a$</code>是二阶矩阵，<code>$G$</code>上的运算<code>$\circ$</code>为矩阵的乘法，<code>$e,a$</code>的值为
+<code>$$e=\begin{pmatrix} 1 &amp; 0 \\ 1 &amp; 0 \end{pmatrix}, a=\begin{pmatrix} \frac{1}{2} &amp; \frac{1}{2} \\ \frac{1}{2} &amp; \frac{1}{2} \end{pmatrix},$$</code>
+<code>$G$</code>显然满足条件1.。而
+<code>$$e\circ a=\begin{pmatrix} 1 &amp; 0 \\ 1 &amp; 0 \end{pmatrix}\begin{pmatrix} \frac{1}{2} &amp; \frac{1}{2} \\ \frac{1}{2} &amp; \frac{1}{2} \end{pmatrix}=\begin{pmatrix} \frac{1}{2} &amp; \frac{1}{2} \\ \frac{1}{2} &amp; \frac{1}{2} \end{pmatrix}=a$$</code>
+<code>$$e\circ e=\begin{pmatrix} 1 &amp; 0 \\ 1 &amp; 0 \end{pmatrix}\begin{pmatrix} 1 &amp; 0 \\ 1 &amp; 0 \end{pmatrix}=\begin{pmatrix} 1 &amp; 0 \\ 1 &amp; 0 \end{pmatrix}=e$$</code>
+即存在<code>$e\in G$</code>，对任意<code>$a\in G$</code>，都有<code>$a\circ a=a$</code>，因此<code>$G$</code>满足条件2.。又有
+<code>$$a\circ e=\begin{pmatrix} \frac{1}{2} &amp; \frac{1}{2} \\ \frac{1}{2} &amp; \frac{1}{2} \end{pmatrix} \begin{pmatrix} 1 &amp; 0 \\ 1 &amp; 0 \end{pmatrix}=\begin{pmatrix} 1 &amp; 0 \\ 1 &amp; 0 \end{pmatrix}=e$$</code>
+即对任意的<code>$a\in G$</code>，存在<code>$b\in G$</code>，使得<code>$a\circ b=e$</code>，因此<code>$G$</code>满足新的条件3.。但，由上可知<code>$e\circ a\ne a\circ e$</code>，因此<code>$e$</code>不满足幺元定义，因此<code>$G$</code>不是群。</p>
+<hr>
+<p>3、设<code>$G$</code>是一个非空集合，其中定义了一个二元运算<code>$\circ$</code>。证明：如果此运算满足结合律，并且对<code>$G$</code>中的任意两个元素<code>$a,b$</code>，方程<code>$a\circ x=b$</code>和<code>$y\circ a=b$</code>都在<code>$G$</code>中有解，则<code>$(G,\circ)$</code>是群。</p>
+<p><strong>解答：</strong> 由题可知，对<code>$\forall a, c \in G$</code>，存在<code>$x\in G$</code>，使得<code>$c\circ x=a$</code>，同时存在<code>$e\in G$</code>，使得<code>$e\circ c=c$</code>，即<code>$e\circ a=a$</code>。由<code>$a$</code>的任意性可知，<code>$G$</code>存在左幺元。而又存在<code>$b\in G$</code>，使得<code>$b\circ a=e$</code>，由<code>$a$</code>的任意性可知，<code>$G$</code>的每个元素存在左逆元。综上，<code>$(G,\circ)$</code>是群。</p>
+<hr>
+<p>4、设<code>$G$</code>是一个非空的有限集合，其中定义了一个二元运算<code>$\circ$</code>。证明：如果此运算满足结合律，并且对于<code>$G$</code>中任意三个元素<code>$a,b,c$</code>，都有（左消去律）<code>$ab=ac\Rightarrow b=c$</code>，以及（右消去律）<code>$ba=ca\Rightarrow b=c$</code>，则<code>$(G,\circ)$</code>是群。</p>
+<p><strong>解答：</strong> 由于<code>$G$</code>为有限集合，不妨令<code>$G=\{g_1,\dots,g_n\}$</code>，其中<code>$n$</code>为<code>$G$</code>的元素个数。由题可知，对<code>$\forall i,j,k\in [1,n]$</code>，<code>$g_ig_j=g_ig_k\Rightarrow g_j=g_k$</code>，因此<code>$g_ig_1,\dots,g_ig_n$</code>两两不同，且必存在<code>$l\in G$</code>，使<code>$g_ig_l=g_k$</code>。因此对<code>$\forall i,k\in [1,n]$</code>，方程<code>$g_ix=g_k$</code>在<code>$G$</code>中有解。同理，对<code>$\forall i,k\in [1,n]$</code>，方程<code>$yg_i=g_k$</code>在<code>$G$</code>中有解，由3题的结论可知，<code>$(G,\circ)$</code>是群。</p>
+<hr>
+<p>5、设<code>$G$</code>是群，<code>$a,b\in G$</code>，如果<code>$aba^{-1}=b^r$</code>，证明<code>$a^iba^{-i}=b^{r^i}$</code>.</p>
+<p><strong>解答：</strong> 利用数学归纳法，<code>$n=1$</code>时有<code>$a^nba^{-n}=b^{r^n}$</code>. 假设当<code>$n=i-1$</code>时，命题成立，则
+<code>$$a^iba^{-i}=a(a^{i-1}ba^{-(i-1)})a^{-1}=ab^{r^{i-1}}a^{-1}=(aba^{-1})^{r^{i-1}}=(b^r)^{r^{i-1}}=b^{r^i},$$</code>
+因此当<code>$n=i$</code>时，命题成立。</p>
+<hr>
+<p>6、证明不存在恰有两个2阶元素的群。</p>
+<p><strong>解答：</strong> 假设群<code>$G$</code>中的两个2阶元素<code>$a,b$</code>，则<code>$ab\ne a$</code>，否则<code>$aab=aa\Rightarrow b=e$</code>，与<code>$b$</code>是2阶元素矛盾，同理可得<code>$ab\ne b$</code>。现考虑元素<code>$aba\in G$</code>，易知<code>$aba\ne a$</code>，否则<code>$abaa=aa\Rightarrow ab=a$</code>，矛盾，同理可得<code>$aba\ne b$</code>。又有<code>$aba\ne e$</code>（其中<code>$e\in G$</code>为群<code>$G$</code>的幺元），否则<code>$abaa=ea\Rightarrow ab=a$</code>，矛盾。而<code>$(aba)^2=(aba)(aba)=e$</code>，即<code>$aba$</code>是群<code>$G$</code>中不同于<code>$a,b$</code>的另一个2阶元素，因此命题得证。</p>
+<hr>
+<p>7、设<code>$G$</code>是群，如果对于任意的<code>$a,b\in G$</code>，都有<code>$(ab)^2=a^2b^2$</code>，证明<code>$G$</code>是交换群。并由此证明：如果<code>$exp(G)=2$</code>，则<code>$G$</code>交换。</p>
+<p><strong>解答：</strong> <code>$(ab)^2=a^2b^2$``$\Rightarrow abab=aabb$``$\Rightarrow a^{-1}ababb^{-1}=a^{-1}aabbb^{-1}$``$\Rightarrow ab=ba$</code> ，由<code>$a,b$</code>的任意性可知<code>$G$</code>是交换群。如果<code>$exp(G)=2$</code>，则任意<code>$a,b\in G$</code>，有<code>$a^2=e$</code>，<code>$b^2=e$</code>，<code>$(ab)^2=e$</code>，因此有<code>$(ab)^{-1}=ab$``$\Rightarrow b^{-1}a^{-1}$``$=ba=ab$</code>.</p>
+<hr>
+<p>8、在<code>$S_3$</code>中找出两个元素<code>$x,y$</code>，使得<code>$(xy)^2\ne x^2y^2$</code>.</p>
+<p><strong>解答：</strong> <code>$(xy)^2\ne x^2y^2$</code>当且仅当<code>$xy\ne yx$</code>，令<code>$x=(12), y=(13)$</code>，则<code>$xy=(132), yx=(123)$</code>，因此有<code>$xy\ne yx$</code>.</p>
+<hr>
+<p>9、设<code>$G$</code>是群，<code>$i$</code>为任一确定的正整数。如果对于任意的<code>$a,b\in G$</code>，都有<code>$(ab)^k=a^kb^k$</code>，<code>$k=i,i+1,i+2$</code>，证明<code>$G$</code>是交换群。</p>
+<p><strong>解答：</strong> 由题可知，<code>$(ab)^i=a^ib^i$</code>，<code>$(ab)^{i+1}=a^{i+1}b^{i+1}$</code>，<code>$(ab)^{i+2}=a^{i+2}b^{i+2}$</code>. 而<code>$(ab)^{i+1}=a(ba)^{i}b$</code>，<code>$(ab)^{i+2}=a(ba)^{i+1}b$</code>，因此<code>$(ab)^i=(ba)^i$``$，(ab)^{i+1}=(ba)^{i+1}$</code>，从而<code>$(ab)^i(ab)=(ba)^i(ba)$``$=(ab)^i(ba)$</code>. 两边乘以<code>$((ab)^i)^{-1}$</code>，得<code>$ab=ba$</code>. 由<code>$a,b$</code>的任意性，可得<code>$G$</code>是交换群。</p>
+<hr>
+<p>10、证明：群<code>$G$</code>为交换群当且仅当<code>$x\mapsto x^{-1}(x\in G)$</code>是同构映射。</p>
+<p><strong>解答：</strong> 令<code>$h:x\mapsto x^{-1}(x\in G)$</code>为<code>$G$</code>到自身的映射。若<code>$h$</code>为同构，则<code>$\forall x,y\in G$</code>，<code>$h(xy)=(xy)^{-1}=y^{-1}x^{-1}$``$=h(y)h(x)=h(yx)$</code>，因此<code>$xy=h^{-1}h(xy)=h^{-1}h(yx)=yx$</code>. 反之，若<code>$G$</code>是交换群，则<code>$\forall x,y\in G$</code>，<code>$h(xy)=h(yx)=(yx)^{-1}=x^{-1}y^{-1}=h(x)h(y)$</code>，因此<code>$h$</code>是群同态。同时，对<code>$\forall y\in G$</code>，<code>$h(y^{-1})=y$</code>，因此<code>$h$</code>是满同态，而<code>$h(y)=0\Rightarrow y^{-1}=e\Rightarrow y=e$</code>，因此<code>$h$</code>是单同态，从而<code>$h$</code>是同构。</p>
+
+</main>
+
+  <footer>
+  <script src="/js/math-code.js"></script>
+<script async src="https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+<script async src="/js/center-img.js"></script>
+
+  
+  <hr/>
+  © <a href="https://shishuai.org">shuai Shi</a> 2020 &ndash; 2020 | <a href="https://github.com/markshih91">Github</a>
+  
+  </footer>
+  </body>
+</html>
+
