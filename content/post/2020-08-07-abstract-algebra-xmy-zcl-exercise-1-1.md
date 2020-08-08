@@ -6,6 +6,7 @@ categories:
   - Exercises
 tags:
   - Group
+gitment: true
 ---
 
 ### 1.1 群的基本概念

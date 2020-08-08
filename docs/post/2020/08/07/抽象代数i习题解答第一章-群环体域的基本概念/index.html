@@ -106,6 +106,24 @@
 
 </main>
 
+
+<div id="git-comments"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+  var gitment = new Gitment({
+    id: '',  
+    owner: 'markshih91',
+    repo: 'markshih91.github.io',
+    oauth: {
+      client_id: '94d1c3621be76900cdf3',
+      client_secret: '10a6128caf6e883e40f2e14000a53a29a1ca394a',
+    }
+  })
+  gitment.render('git-comments')
+</script>
+
+
 <style>
   .post-nav{height:20px; width:800px}
   .prev-post{width:300px; float:left; overflow: hidden; white-space: nowrap; text-overflow: ellipsis}
