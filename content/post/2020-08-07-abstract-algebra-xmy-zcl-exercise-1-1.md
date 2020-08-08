@@ -2,12 +2,12 @@
 title: 《抽象代数I》习题解答：第一章 群环体域的基本概念
 author: Shuai Shi
 date: '2020-08-07'
+slug: 20200807001
 categories:
   - Exercises
 tags:
   - Group
 gitment: true
-gitment_id: 20200807001
 ---
 
 ### 1.1 群的基本概念
