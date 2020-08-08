@@ -41,7 +41,7 @@ footnotereturnlinkcontents = "↩"
 
 [params]
     description = "A website built through Hugo."
-    footer = "&copy; [shuai Shi](https://shishuai.org) 2020 -- 2020 | [Github](https://github.com/markshih91)"
+    footer = "&copy; [Shuai Shi](https://shishuai.org) 2020 -- 2020 | [Github](https://github.com/markshih91)"
 
 [markup]
   [markup.goldmark]
