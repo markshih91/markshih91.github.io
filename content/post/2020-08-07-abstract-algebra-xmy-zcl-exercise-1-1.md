@@ -7,6 +7,7 @@ categories:
 tags:
   - Group
 gitment: true
+gitment_id: 20200807001
 ---
 
 ### 1.1 群的基本概念
