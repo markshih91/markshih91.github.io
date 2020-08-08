@@ -7,7 +7,7 @@ categories:
   - Exercises
 tags:
   - Group
-gitment: true
+gittalk: true
 ---
 
 ### 1.1 群的基本概念
