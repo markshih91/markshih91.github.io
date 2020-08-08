@@ -1,32 +1,14 @@
 ---
-title: About Me
+title: About
+author: Shuai Shi
+date: '2020-08-08'
 ---
-<p>
-<img src="/raw/images/me.png" align="right" width="180" hspace="5" vspace="5">
 
-I`m a Researcher of Computer Vision and Artificial Intelligence at Juefx Technology Co., Ltd. My research interests are Computer Vision, Machine Learning and Deep Learning. I'm also interested in more applied problems with nice theoretical components in Mathematices. Here are some of my favorite site/blog [links](/links).
+This blog is currently hosting
 
-I obtained my M.S. in Pure Mathematics from [AMSS, Chinese Academy of Sciences](http://www.amss.ac.cn/) in May 2019. I finished my undergrad in Information and Computing Science at Chongqing University of Technology in 2013, and won several Competition Awards in Mathematics.
-</p>
+- updates on my mathematical research;
+- discussion of open problems;
+- my notes on number theory, on algebra, and on algebraic geometry;
+- and various other topics, usually related to mathematics.
 
-## Research interests:
-- Number Theory
-- Algebraic Geometry
-- Artificial Intelligence
-
-## Education:
-- 2016-2019: M.S. in Pure Mathematics institution: AMSS, Chinese Academy of Sciences year
-- 2009-2013: B.S. in Information and Computing Science institution: Chongqing University of Technology year
-
-## Awards:
-- 2012: First prize of the 4th National Undergraduate Mathematics Competition (Mathematics), Chongqing competition area
-- 2012: Second prize of undergraduate group of Contemporary Undergraduate Mathematical Contest in Modeling, Chongqing competition area
-- 2012: Second prize of the 11th Mathematics Competition of Chongqing University of Technology
-- 2010: Third prize of the 2th National Undergraduate Mathematics Competition (Mathematics), Chongqing competition area
-- 2008: Second prize of National High School Mathematics League
-- 2008: First prize of Hebei High School Mathematics Competition
-
-## Social:
-- Email shuai_shi@sina.cn
-- Github https://github.com/markshih91
-- Zhihu https://zhihu.com/people/shuai_shi
+I welcome comments from people with all kinds of mathematical backgrounds and levels of expertise; comments which are spam, self-promoting, off-topic, or otherwise not fulfilling the above requests will be summarily deleted; repeated offenders in this regard may be subject to blocking.  In particular, comments devoted primarily to promoting one’s own research are subject to deletion. Of course, I will not be able to personally respond to all the comments made on this blog.

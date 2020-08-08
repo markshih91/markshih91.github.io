@@ -1,13 +1,11 @@
 ---
-title: About Me
 ---
-
 <p>
 <img src="/raw/images/me.png" align="right" width="180" hspace="5" vspace="5">
 
-I`m a Researcher of Computer Vision and Artificial Intelligence at Juefx Technology Co., Ltd. My research interests are Computer Vision, Machine Learning and Deep Learning. I'm also interested in more applied problems with nice theoretical components in Mathematices. Here are some of my favorite site/blog [links](/links).
+I`m a Researcher of Computer Vision and Artificial Intelligence at Juefx Technology Co., Ltd. My research interests are Computer Vision, Machine Learning and Deep Learning. I'm also interested in Mathematices. I obtained my M.S. in Pure Mathematics from [AMSS, Chinese Academy of Sciences](http://www.amss.ac.cn/) in May 2019. I finished my undergrad in Information and Computing Science at Chongqing University of Technology in 2013, and won several Competition Awards in Mathematics.
 
-I obtained my M.S. in Pure Mathematics from [AMSS, Chinese Academy of Sciences](http://www.amss.ac.cn/) in May 2019. I finished my undergrad in Information and Computing Science at Chongqing University of Technology in 2013, and won several Competition Awards in Mathematics.
+This is my personal blog website, where I post some research work in the field of mathematics. Please see [About](/about) for detailed introduction and [Posts](/post) for the list of articles. Here are some of my favorite site/blog [links](/links).
 </p>
 
 ## Research interests:

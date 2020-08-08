@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>About Me on shishuai`s blog</title>
+    <title>shishuai`s blog</title>
     <link>https://shishuai.org/</link>
-    <description>Recent content in About Me on shishuai`s blog</description>
+    <description>Recent content on shishuai`s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 08 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://shishuai.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>About</title>
+      <link>https://shishuai.org/about/</link>
+      <pubDate>Sat, 08 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://shishuai.org/about/</guid>
+      <description>This blog is currently hosting
+ updates on my mathematical research; discussion of open problems; my notes on number theory, on algebra, and on algebraic geometry; and various other topics, usually related to mathematics.  I welcome comments from people with all kinds of mathematical backgrounds and levels of expertise; comments which are spam, self-promoting, off-topic, or otherwise not fulfilling the above requests will be summarily deleted; repeated offenders in this regard may be subject to blocking.</description>
+    </item>
     
     <item>
       <title>《抽象代数I》习题解答：第一章 群环体域的基本概念</title>
@@ -19,16 +29,6 @@
       <guid>https://shishuai.org/post/2020/08/07/%E6%8A%BD%E8%B1%A1%E4%BB%A3%E6%95%B0i%E4%B9%A0%E9%A2%98%E8%A7%A3%E7%AD%94%E7%AC%AC%E4%B8%80%E7%AB%A0-%E7%BE%A4%E7%8E%AF%E4%BD%93%E5%9F%9F%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</guid>
       <description>1.1 群的基本概念 1、证明群的定义可以简化为：如果一个非空集合$G$上定义了一个二元运算$\circ$，满足：
  结合律： $(a\circ b)\circ c=a\circ(b\circ c)\ (\forall a,b,c\in G)$； 存在左幺元： 存在$e\in G$，使得对任意的$a\in G$，恒有 $$e\circ a=a;$$ 存在左逆元： 对任意的$a\in G$，存在$b\in G$，使得 $$b\circ a=e;$$ 则$G$关于运算$\circ$构成一个群。  解答： $\forall a\in G$，存在$b\in G$，使得$b\circ a=e$，则对于$b$，存在$c\in G$，使得$c\circ b=e$，则 $$ \begin{aligned} &amp;amp; b\circ (a\circ e)=(b\circ a)\circ e=e\circ e=e =b\circ a \\ \Rightarrow &amp;amp; c\circ (b\circ (a\circ e))=c\circ (b\circ a) \\ \Rightarrow &amp;amp; (c\circ b)\circ (a\circ e)=(c\circ b)\circ a \\ \Rightarrow &amp;amp; e\circ (a\circ e)=e\circ a \\ \Rightarrow &amp;amp; a\circ e=a \end{aligned} $$ 因此，存在$e\in G$,对任意$a\in G$，$e\circ a=a\circ e=a$，即$G$存在幺元。假设存在另一个$e_1\in G$，使得$e_1\circ a=a\circ e_1=a$，则 $$e_1=e\circ e_1=e_1\circ e=e$$ 即，$G$存在唯一的幺元。</description>
-    </item>
-    
-    <item>
-      <title>About Me</title>
-      <link>https://shishuai.org/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://shishuai.org/about/</guid>
-      <description>I`m a Researcher of Computer Vision and Artificial Intelligence at Juefx Technology Co., Ltd. My research interests are Computer Vision, Machine Learning and Deep Learning. I&#39;m also interested in more applied problems with nice theoretical components in Mathematices. Here are some of my favorite site/blog links.
-I obtained my M.S. in Pure Mathematics from AMSS, Chinese Academy of Sciences in May 2019. I finished my undergrad in Information and Computing Science at Chongqing University of Technology in 2013, and won several Competition Awards in Mathematics.</description>
     </item>
     
   </channel>
