@@ -47,10 +47,10 @@
 </div>
 <main>
 <h3 id="11-群的基本概念">1.1 群的基本概念</h3>
-<p>1、证明群的定义可以简化为：如果一个非空集合$G$上定义了一个二元运算<code>$\circ$</code>，满足：</p>
+<p>1、证明群的定义可以简化为：如果一个非空集合<code>$G$</code>上定义了一个二元运算<code>$\circ$</code>，满足：</p>
 <ol>
 <li><strong>结合律：</strong> <code>$(a\circ b)\circ c=a\circ(b\circ c)\ (\forall a,b,c\in G)$</code>；</li>
-<li>存在<strong>左幺元：</strong> 存在<code>$e\in G$</code>，使得对任意的$a\in G$，恒有
+<li>存在<strong>左幺元：</strong> 存在<code>$e\in G$</code>，使得对任意的<code>$a\in G$</code>，恒有
 <code>$$e\circ a=a;$$</code></li>
 <li>存在<strong>左逆元：</strong> 对任意的<code>$a\in G$</code>，存在<code>$b\in G$</code>，使得
 <code>$$b\circ a=e;$$</code>
@@ -93,16 +93,16 @@
 <p><strong>解答：</strong> 假设群<code>$G$</code>中的两个2阶元素<code>$a,b$</code>，则<code>$ab\ne a$</code>，否则<code>$aab=aa\Rightarrow b=e$</code>，与<code>$b$</code>是2阶元素矛盾，同理可得<code>$ab\ne b$</code>。现考虑元素<code>$aba\in G$</code>，易知<code>$aba\ne a$</code>，否则<code>$abaa=aa\Rightarrow ab=a$</code>，矛盾，同理可得<code>$aba\ne b$</code>。又有<code>$aba\ne e$</code>（其中<code>$e\in G$</code>为群<code>$G$</code>的幺元），否则<code>$abaa=ea\Rightarrow ab=a$</code>，矛盾。而<code>$(aba)^2=(aba)(aba)=e$</code>，即<code>$aba$</code>是群<code>$G$</code>中不同于<code>$a,b$</code>的另一个2阶元素，因此命题得证。</p>
 <hr>
 <p>7、设<code>$G$</code>是群，如果对于任意的<code>$a,b\in G$</code>，都有<code>$(ab)^2=a^2b^2$</code>，证明<code>$G$</code>是交换群。并由此证明：如果<code>$exp(G)=2$</code>，则<code>$G$</code>交换。</p>
-<p><strong>解答：</strong> <code>$(ab)^2=a^2b^2$``$\Rightarrow abab=aabb$``$\Rightarrow a^{-1}ababb^{-1}=a^{-1}aabbb^{-1}$``$\Rightarrow ab=ba$</code> ，由<code>$a,b$</code>的任意性可知<code>$G$</code>是交换群。如果<code>$exp(G)=2$</code>，则任意<code>$a,b\in G$</code>，有<code>$a^2=e$</code>，<code>$b^2=e$</code>，<code>$(ab)^2=e$</code>，因此有<code>$(ab)^{-1}=ab$``$\Rightarrow b^{-1}a^{-1}$``$=ba=ab$</code>.</p>
+<p><strong>解答：</strong> <code>$(ab)^2=a^2b^2$</code> <code>$\Rightarrow abab=aabb$</code> <code>$\Rightarrow a^{-1}ababb^{-1}=a^{-1}aabbb^{-1}$</code> <code>$\Rightarrow ab=ba$</code> ，由<code>$a,b$</code>的任意性可知<code>$G$</code>是交换群。如果<code>$exp(G)=2$</code>，则任意<code>$a,b\in G$</code>，有<code>$a^2=e$</code>，<code>$b^2=e$</code>，<code>$(ab)^2=e$</code>，因此有<code>$(ab)^{-1}=ab$</code> <code>$\Rightarrow b^{-1}a^{-1}$</code> <code>$=ba=ab$</code>.</p>
 <hr>
 <p>8、在<code>$S_3$</code>中找出两个元素<code>$x,y$</code>，使得<code>$(xy)^2\ne x^2y^2$</code>.</p>
 <p><strong>解答：</strong> <code>$(xy)^2\ne x^2y^2$</code>当且仅当<code>$xy\ne yx$</code>，令<code>$x=(12), y=(13)$</code>，则<code>$xy=(132), yx=(123)$</code>，因此有<code>$xy\ne yx$</code>.</p>
 <hr>
 <p>9、设<code>$G$</code>是群，<code>$i$</code>为任一确定的正整数。如果对于任意的<code>$a,b\in G$</code>，都有<code>$(ab)^k=a^kb^k$</code>，<code>$k=i,i+1,i+2$</code>，证明<code>$G$</code>是交换群。</p>
-<p><strong>解答：</strong> 由题可知，<code>$(ab)^i=a^ib^i$</code>，<code>$(ab)^{i+1}=a^{i+1}b^{i+1}$</code>，<code>$(ab)^{i+2}=a^{i+2}b^{i+2}$</code>. 而<code>$(ab)^{i+1}=a(ba)^{i}b$</code>，<code>$(ab)^{i+2}=a(ba)^{i+1}b$</code>，因此<code>$(ab)^i=(ba)^i$``$，(ab)^{i+1}=(ba)^{i+1}$</code>，从而<code>$(ab)^i(ab)=(ba)^i(ba)$``$=(ab)^i(ba)$</code>. 两边乘以<code>$((ab)^i)^{-1}$</code>，得<code>$ab=ba$</code>. 由<code>$a,b$</code>的任意性，可得<code>$G$</code>是交换群。</p>
+<p><strong>解答：</strong> 由题可知，<code>$(ab)^i=a^ib^i$</code>，<code>$(ab)^{i+1}=a^{i+1}b^{i+1}$</code>，<code>$(ab)^{i+2}=a^{i+2}b^{i+2}$</code>. 而<code>$(ab)^{i+1}=a(ba)^{i}b$</code>，<code>$(ab)^{i+2}=a(ba)^{i+1}b$</code>，因此<code>$(ab)^i=(ba)^i$</code> <code>$，(ab)^{i+1}=(ba)^{i+1}$</code>，从而<code>$(ab)^i(ab)=(ba)^i(ba)$</code> <code>$=(ab)^i(ba)$</code>. 两边乘以<code>$((ab)^i)^{-1}$</code>，得<code>$ab=ba$</code>. 由<code>$a,b$</code>的任意性，可得<code>$G$</code>是交换群。</p>
 <hr>
 <p>10、证明：群<code>$G$</code>为交换群当且仅当<code>$x\mapsto x^{-1}(x\in G)$</code>是同构映射。</p>
-<p><strong>解答：</strong> 令<code>$h:x\mapsto x^{-1}(x\in G)$</code>为<code>$G$</code>到自身的映射。若<code>$h$</code>为同构，则<code>$\forall x,y\in G$</code>，<code>$h(xy)=(xy)^{-1}=y^{-1}x^{-1}$``$=h(y)h(x)=h(yx)$</code>，因此<code>$xy=h^{-1}h(xy)=h^{-1}h(yx)=yx$</code>. 反之，若<code>$G$</code>是交换群，则<code>$\forall x,y\in G$</code>，<code>$h(xy)=h(yx)=(yx)^{-1}=x^{-1}y^{-1}=h(x)h(y)$</code>，因此<code>$h$</code>是群同态。同时，对<code>$\forall y\in G$</code>，<code>$h(y^{-1})=y$</code>，因此<code>$h$</code>是满同态，而<code>$h(y)=0\Rightarrow y^{-1}=e\Rightarrow y=e$</code>，因此<code>$h$</code>是单同态，从而<code>$h$</code>是同构。</p>
+<p><strong>解答：</strong> 令<code>$h:x\mapsto x^{-1}(x\in G)$</code>为<code>$G$</code>到自身的映射。若<code>$h$</code>为同构，则<code>$\forall x,y\in G$</code>，<code>$h(xy)=(xy)^{-1}=y^{-1}x^{-1}$</code> <code>$=h(y)h(x)=h(yx)$</code>，因此<code>$xy=h^{-1}h(xy)=h^{-1}h(yx)=yx$</code>. 反之，若<code>$G$</code>是交换群，则<code>$\forall x,y\in G$</code>，<code>$h(xy)=h(yx)=(yx)^{-1}=x^{-1}y^{-1}=h(x)h(y)$</code>，因此<code>$h$</code>是群同态。同时，对<code>$\forall y\in G$</code>，<code>$h(y^{-1})=y$</code>，因此<code>$h$</code>是满同态，而<code>$h(y)=0\Rightarrow y^{-1}=e\Rightarrow y=e$</code>，因此<code>$h$</code>是单同态，从而<code>$h$</code>是同构。</p>
 
 </main>
 
